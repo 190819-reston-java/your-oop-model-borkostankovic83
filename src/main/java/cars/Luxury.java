@@ -7,7 +7,7 @@ public class Luxury extends Cars implements Comfort {
 	}
 
 	public Luxury() {
-		super();
+		super("Luxury");
 		// TODO Auto-generated constructor stub
 	}
 

@@ -19,12 +19,12 @@ public class Sport extends Cars implements Comfort, Loud {
 	}
 
 	public Sport() {
-		super();
+		super("Sport");
 		// TODO Auto-generated constructor stub
 	}
 
 	public Sport(String type) {
-		super(type);
+		super(type, "Yellow");
 		// TODO Auto-generated constructor stub
 	}
 
