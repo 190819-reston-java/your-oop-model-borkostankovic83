@@ -28,9 +28,9 @@ public abstract class Cars {
 	/**
 	 * @param speed the speed to set
 	 */
-	public void setSpeed(int mpg) {
+	public void setMpg(int mpg) {
 		if(mpg < 0) {
-			throw new NegativeSpeedException();
+			throw new NegativeMpgException();
 		}
 		this.mpg = mpg;
 	}
@@ -123,10 +123,5 @@ public abstract class Cars {
 		return "Cars [type=" + type + ", color=" + color + ", newCar="
 	+ newCar + ", Average MPG="+mpg+"]";
 	}
-	/**
-	 * @param mpg the mpg to set
-	 */
-	public void setMpg(int mpg) {
-		this.mpg = mpg;
-	}
+
 }

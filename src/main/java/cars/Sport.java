@@ -7,8 +7,8 @@ public class Sport extends Cars implements Serializable,Comfort, Loud {
 	
 	public static int numberOfCars = 0;
 	
-	public Sport(String type, String color, boolean newCar, int speed) {
-		super(type, color, newCar, speed);
+	public Sport(String type, String color, boolean newCar, int mpg) {
+		super(type, color, newCar, mpg);
 		numberOfCars++;
 	}
 	

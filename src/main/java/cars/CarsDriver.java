@@ -37,7 +37,7 @@ public class CarsDriver {
 			Sport c = new Sport("MUSTANG");
 			
 			
-			c.setSpeed(20);
+			c.setMpg(-20);
 			System.out.println(c.getMpg());
 			c.setColor("Yellow");
 			// getting color for sport car System.out.println(c.getColor());
@@ -45,7 +45,7 @@ public class CarsDriver {
 			c.SportSeats(); //
 			c.printNumberOfCars();
 			System.out.println(" ");
-			}catch(NegativeSpeedException e) {
+			}catch(NegativeMpgException e) {
 				System.out.println("Sorry, cant set negative speed");
 				System.out.println("received: " + e.getMessage());
 			

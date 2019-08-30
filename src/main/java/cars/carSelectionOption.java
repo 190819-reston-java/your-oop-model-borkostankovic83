@@ -63,7 +63,7 @@ public class carSelectionOption {
 				int mpg = sc.nextInt();
 				
 				carList.add(new Sport(name, color, true));
-			} catch (NegativeSpeedException e) {
+			} catch (NegativeMpgException e) {
 				System.out.println("Cannot have negative MPG!");
 				e.printStackTrace();
 			} catch (Exception e) {

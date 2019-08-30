@@ -9,8 +9,8 @@ public class Luxury extends Cars implements Serializable, Comfort {
 	private static final long serialVersionUID = 1L;
 	public static int numberOfCars =0;
 	
-	public Luxury(String type, String color, boolean newCar, int speed) {
-		super(type, color, newCar, 28);
+	public Luxury(String type, String color, boolean newCar, int mpg) {
+		super(type, color, newCar, mpg);
 		numberOfCars++;
 	}
 	public Luxury(String type, String color, boolean newCar) {
