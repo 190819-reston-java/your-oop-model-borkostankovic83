@@ -1,31 +1,50 @@
 package cars;
 
-public class Sport extends Cars implements Comfort, Loud {
-	public static int number = 0;
+import java.io.Serializable;
 
-	public Sport(String type, String color, boolean newCar) {
-		super(type, color, newCar);
-		number++;
+public class Sport extends Cars implements Serializable,Comfort, Loud {
+	
+	
+	public static int numberOfCars = 0;
+	
+	public Sport(String type, String color, boolean newCar, int speed) {
+		super(type, color, newCar, speed);
+		numberOfCars++;
 	}
+	
+	public Sport(String type, String color, boolean newCar) {
+		this(type, color, newCar, 28);
+		
+	}
+
+
+	public Sport(String type, String color) {
+		this(type, color,true);
+		// TODO Auto-generated constructor stub
+	}
+	public Sport(String type) {
+		this(type, "White");
+		// TODO Auto-generated constructor stub
+	}
+
+	public Sport() {
+		this("Sport");
+		// TODO Auto-generated constructor stub
+	}
+
+
+	
 
 	public void Extras() {
 		// TODO Auto-generated method stub
 		
 	}
-
-	public Sport(String type, String color) {
-		super(type, color);
-		// TODO Auto-generated constructor stub
-	}
-
-	public Sport() {
-		super("Sport");
-		// TODO Auto-generated constructor stub
-	}
-
-	public Sport(String type) {
-		super(type, "Yellow");
-		// TODO Auto-generated constructor stub
+	public void printNumberOfCars() {
+		if (numberOfCars == 0) {
+			System.out.println("There's no cars");
+		} else {
+			System.out.println("There are: " + numberOfCars + " cars");
+		}
 	}
 
 	@Override

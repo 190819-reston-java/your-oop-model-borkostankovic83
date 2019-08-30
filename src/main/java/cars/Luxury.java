@@ -1,15 +1,22 @@
 package cars;
 
-public class Luxury extends Cars implements Comfort {
-	public static int number =0;
+import java.io.Serializable;
+
+public class Luxury extends Cars implements Serializable, Comfort {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	public static int numberOfCars =0;
+	
+	public Luxury(String type, String color, boolean newCar, int speed) {
+		super(type, color, newCar, 28);
+		numberOfCars++;
+	}
 	public Luxury(String type, String color, boolean newCar) {
 		super(type, color, newCar);
 	}
 
-	public Luxury() {
-		super("Luxury");
-		// TODO Auto-generated constructor stub
-	}
 
 	public Luxury(String type, String color) {
 		super(type, color);
@@ -18,6 +25,10 @@ public class Luxury extends Cars implements Comfort {
 
 	public Luxury(String type) {
 		super(type);
+		// TODO Auto-generated constructor stub
+	}
+	public Luxury() {
+		super("Luxury");
 		// TODO Auto-generated constructor stub
 	}
 
