@@ -46,7 +46,7 @@ public class CarsDriver {
 			c.printNumberOfCars();
 			System.out.println(" ");
 			}catch(NegativeMpgException e) {
-				System.out.println("Sorry, cant set negative speed");
+				System.out.println("Sorry, cant set negative MPG");
 				System.out.println("received: " + e.getMessage());
 			
 				
